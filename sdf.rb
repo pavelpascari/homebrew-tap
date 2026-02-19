@@ -5,21 +5,21 @@
 class Sdf < Formula
   desc "Stacked Diffs Flow — manage chains of dependent PRs"
   homepage "https://github.com/pavelpascari/sdf"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pavelpascari/sdf/releases/download/v0.1.4/sdf-darwin-amd64.tar.gz"
-      sha256 "ce1951418cde6092033f729a444acd78e1a100f33c26854d7476e662777f9474"
+      url "https://github.com/pavelpascari/sdf/releases/download/v0.1.5/sdf-darwin-amd64.tar.gz"
+      sha256 "c180bed9a9efbbc26c67d80085cdd485319e9ffa28f862095c23eb7c91e623a1"
 
       def install
         bin.install "sdf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pavelpascari/sdf/releases/download/v0.1.4/sdf-darwin-arm64.tar.gz"
-      sha256 "25ef6614a2cadd3806ccbf83518e6f0836e99d009b7f8bb90b1ade045111d705"
+      url "https://github.com/pavelpascari/sdf/releases/download/v0.1.5/sdf-darwin-arm64.tar.gz"
+      sha256 "b05a2569aac7ffb10003231ac0ac5bb3d4d2327c7f8980cbc56299c9565e4e8e"
 
       def install
         bin.install "sdf"
@@ -29,15 +29,15 @@ class Sdf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pavelpascari/sdf/releases/download/v0.1.4/sdf-linux-amd64.tar.gz"
-      sha256 "59429b3ed66faff154cfe3da9d75f072041183e604760591145a17e6c139053c"
+      url "https://github.com/pavelpascari/sdf/releases/download/v0.1.5/sdf-linux-amd64.tar.gz"
+      sha256 "0c91b0b4dd8a21d739d59747cadc13cfbfb0165edded38ea9f37a7e82e490aee"
       def install
         bin.install "sdf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pavelpascari/sdf/releases/download/v0.1.4/sdf-linux-arm64.tar.gz"
-      sha256 "a5dbb0123db049f710da96bf39edc29375445f3e9797e3e60c0332384b4ed8c2"
+      url "https://github.com/pavelpascari/sdf/releases/download/v0.1.5/sdf-linux-arm64.tar.gz"
+      sha256 "95d6110150042e0382580ce57651a2d620fc57b527c11998d31c9e5d77807e3d"
       def install
         bin.install "sdf"
       end
