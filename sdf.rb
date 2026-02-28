@@ -5,21 +5,21 @@
 class Sdf < Formula
   desc "Stacked Diffs Flow — manage chains of dependent PRs"
   homepage "https://github.com/pavelpascari/sdf"
-  version "0.2.5"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pavelpascari/sdf/releases/download/v0.2.5/sdf-darwin-amd64.tar.gz"
-      sha256 "668fb2d717cc925a0244d2460f8667ee94f4456c1588ef1c885a4a58bd983c47"
+      url "https://github.com/pavelpascari/sdf/releases/download/v0.2.3/sdf-darwin-amd64.tar.gz"
+      sha256 "660081611117dc4c04e1e26728652dc200762c27db6342761f052403c694eae4"
 
       define_method(:install) do
         bin.install "sdf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pavelpascari/sdf/releases/download/v0.2.5/sdf-darwin-arm64.tar.gz"
-      sha256 "cf64a01144ae09a65124ead13706d83b2fe0c3f780d0559b82c1cee2a1f0f6dd"
+      url "https://github.com/pavelpascari/sdf/releases/download/v0.2.3/sdf-darwin-arm64.tar.gz"
+      sha256 "19fef5f1980c01ffe35da3b8dc59f06e0a61bb436e1876f1aad3a33b6ffa5dcb"
 
       define_method(:install) do
         bin.install "sdf"
@@ -29,15 +29,15 @@ class Sdf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pavelpascari/sdf/releases/download/v0.2.5/sdf-linux-amd64.tar.gz"
-      sha256 "449891a3a263f3d8c1c975eb61c6ed7a66faffb16c9372f45dfcb9a68d5a9a87"
+      url "https://github.com/pavelpascari/sdf/releases/download/v0.2.3/sdf-linux-amd64.tar.gz"
+      sha256 "c8483eb7a5c35a5f115601cf8e8e7204af9c84557a881f81edde77009ffa128d"
       define_method(:install) do
         bin.install "sdf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pavelpascari/sdf/releases/download/v0.2.5/sdf-linux-arm64.tar.gz"
-      sha256 "eb390f1d24cba521fe4f7ca2e8ce3593afe9ddd90c9bfe6bac0e439664fe5b82"
+      url "https://github.com/pavelpascari/sdf/releases/download/v0.2.3/sdf-linux-arm64.tar.gz"
+      sha256 "5327d73e733ada6b2797f3e0a2e5720de6869a795910ac275a02edbdf2d84260"
       define_method(:install) do
         bin.install "sdf"
       end
