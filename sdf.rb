@@ -11,7 +11,7 @@ class Sdf < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pavelpascari/sdf/releases/download/v0.3.1/sdf-darwin-amd64.tar.gz"
-      sha256 "d06713f76fe9d3a6a73c8947d4fe857f170d9891e2f1d4afd15e05bf33de7b73"
+      sha256 "f8e720bf12d6c68b0a7beb7b54860e21a1fa3a4ad5007bd53c61c90fbedf0ee5"
 
       define_method(:install) do
         bin.install "sdf"
@@ -19,7 +19,7 @@ class Sdf < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pavelpascari/sdf/releases/download/v0.3.1/sdf-darwin-arm64.tar.gz"
-      sha256 "5f2f15f9f7b59bcdd188985e933abeac7384c5faf21cc20536e00c5e5af2f94b"
+      sha256 "0d3cab36368e472b54762fa8d9c0f2c8e5c869101c28db9a82f5fe1cafdb213b"
 
       define_method(:install) do
         bin.install "sdf"
@@ -30,14 +30,14 @@ class Sdf < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/pavelpascari/sdf/releases/download/v0.3.1/sdf-linux-amd64.tar.gz"
-      sha256 "6044d92bd20118c0b1ff080a786aef520d617aa76562ac48b4e1e2194413af59"
+      sha256 "860f271ae91b7fa973f2fbe5c4c1225b6af86973f71a502c18c774b78eb43816"
       define_method(:install) do
         bin.install "sdf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pavelpascari/sdf/releases/download/v0.3.1/sdf-linux-arm64.tar.gz"
-      sha256 "9dbe3465be58d7adbf613616658bab32839d409c9926478f1872386f9127c2d1"
+      sha256 "646492e0b933865012283cc9f395274f9dbfcd7731b958f5ede3298238c76ce0"
       define_method(:install) do
         bin.install "sdf"
       end
